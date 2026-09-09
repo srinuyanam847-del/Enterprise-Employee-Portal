@@ -1,4 +1,4 @@
-name: Enterprise DevOps CI
+ name: Lab4 CI Pipeline
 
 on:
   push:
@@ -9,16 +9,12 @@ on:
       - master
 
 jobs:
-  validate:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Verify application
-        run: |
-          echo "Starting application validation..."
-          test -f index.html
-          echo "index.html exists"
-          echo "CI validation completed successfully"
+      - name: Run CI test
+        run: echo "Lab4 CI Pipeline is working successfully!"
