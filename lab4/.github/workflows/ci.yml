@@ -1,4 +1,4 @@
- name: Lab4 CI Pipeline
+ name: Add CI Workflow
 
 on:
   push:
@@ -16,5 +16,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run CI test
-        run: echo "Lab4 CI Pipeline is working successfully!"
+      - name: Run CI check
+        run: echo "CI Pipeline is working successfully!"
