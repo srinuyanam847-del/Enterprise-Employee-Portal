@@ -16,5 +16,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run CI check
+      - name: CI Test
         run: echo "CI Pipeline is working successfully!"
