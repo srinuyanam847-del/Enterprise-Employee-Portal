@@ -1,4 +1,4 @@
- name: Lab4 CI Pipeline
+name: Lab4 CI Pipeline
 
 on:
   push:
