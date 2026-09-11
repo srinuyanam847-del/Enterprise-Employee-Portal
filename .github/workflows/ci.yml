@@ -18,3 +18,8 @@ jobs:
 
       - name: Run CI test
         run: echo "Lab4 CI Pipeline is working successfully!"
+
+      - name: Check application environment
+        run: echo "Application environment is $APP_ENVIRONMENT"
+        env:
+          APP_ENVIRONMENT: ${{ secrets.APP_ENVIRONMENT }}
